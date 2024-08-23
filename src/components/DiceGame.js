@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/Distyles.css";  // Link to your CSS
-
+// C: \Users\ASUS\Desktop\funfusion - hub\public\assets\dice\dice1.png;
 function DiceGame() {
     const randomNumber1 = Math.floor( Math.random() * 6 ) + 1;
-    const randomImageSource1 = `${process.env.PUBLIC_URL}/assets/dice/dice${randomNumber1}.png`;
+    const randomImageSource1 = `/assets/dice/dice${randomNumber1}.png`;
 
     const randomNumber2 = Math.floor( Math.random() * 6 ) + 1;
-    const randomImageSource2 = `${process.env.PUBLIC_URL}/assets/dice/dice${randomNumber2}.png`;
+    const randomImageSource2 = `/assets/dice/dice${randomNumber2}.png`;
 
     let resultText = "";
     if ( randomNumber1 > randomNumber2 ) {
